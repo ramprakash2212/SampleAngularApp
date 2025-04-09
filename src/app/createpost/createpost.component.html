@@ -1,0 +1,30 @@
+<!-- New Post Form -->
+<div class="container">
+  <h3 class="my-4">Create a New Post</h3>
+  <form (submit)="createPost()">
+    <div class="mb-3">
+      <label for="postTitle" class="form-label">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="postTitle"
+        [(ngModel)]="newPost.title"
+        name="title"
+        placeholder="Enter title"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="postBody" class="form-label">Body</label>
+      <textarea
+        class="form-control"
+        id="postBody"
+        [(ngModel)]="newPost.body"
+        name="body"
+        placeholder="Enter body"
+        required
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="createPost()">Create Post</button>
+  </form>
+</div>

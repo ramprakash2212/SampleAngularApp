@@ -1,0 +1,31 @@
+h1 {
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+button {
+  white-space: nowrap;
+}
+
+.modal-footer .btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.modal-footer .btn {
+  width: 120px;
+}
